@@ -7,6 +7,7 @@ import Me from '../pages/me'
 import Circle from '../pages/circle'
 import Create from '../pages/create'
 import Edit from '../pages/edit'
+import Comment from '../pages/comment'
 
 const routes = [
     {
@@ -40,6 +41,10 @@ const routes = [
             {
                 path: 'edit',
                 Component: Edit
+            },
+            {
+                path: 'circle/:circle_id/:post_id',
+                Component: Comment
             }
         ]
     }

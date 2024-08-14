@@ -151,7 +151,7 @@ const Circle = () => {
                                             <span>{ post.likes } Likes</span>
                                         </button>
                                     </div>
-                                    <button className="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1">
+                                    <button className="flex justify-center items-center gap-2 px-2 hover:bg-gray-50 rounded-full p-1" onClick={() => navigate(`/circle/${circle_id}/${post.post_id}`)}>
                                         <svg width="22px" height="22px" viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
                                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>

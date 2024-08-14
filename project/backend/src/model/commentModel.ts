@@ -14,14 +14,16 @@ export class commentModel {
     Date?: Date;
 
     @Property()
-    uesr_id?: number;
+    user_id?: number;
 
     @Property()
     post_id?: number;
 
     // 构造函数
-    constructor(content?: string, date?: Date) {
+    constructor(content: string, user_id: number, post_id: number) {
         this.Content = content;
-        this.Date = date;
+        this.Date = new Date();
+        this.user_id = user_id;
+        this.post_id = post_id;
     }
 }

@@ -20,8 +20,6 @@ export class PostService {
         const filteredModels = res.filter(model => model.circle_id === circle_id);
         const promises = filteredModels.map(async model => {
             const id = model.circle_id
-            console.log(circle_id)
-            console.log(id)
             if (id === circle_id) {
                 const user = await this.userData.findOne({ user_id: model.user_id })
                 const username = user.Username;
