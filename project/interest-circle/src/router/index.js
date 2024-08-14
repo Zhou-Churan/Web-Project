@@ -10,6 +10,7 @@ import Edit from '../pages/edit'
 import Comment from '../pages/comment'
 
 const routes = [
+    
     {
         path: '/',
         Component: Main,
@@ -17,7 +18,7 @@ const routes = [
             {
                 path: 'login',
                 Component: Login
-            },
+            },  
             {
                 path: 'home',
                 Component: Home

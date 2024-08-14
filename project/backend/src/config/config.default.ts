@@ -21,7 +21,7 @@ export default {
       default: {
         dbName: 'interest_circle',
         driver: MySqlDriver,
-        host: 'localhost',
+        host: '192.168.3.8',
         port: 3306,
         username: 'root',
         password: 'zcr9468248726',
